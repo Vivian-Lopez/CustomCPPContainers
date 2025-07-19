@@ -3,6 +3,8 @@ project(CustomContainers)
 
 set(CMAKE_CXX_STANDARD 26)
 
-add_executable(CustomContainers main.cpp
+add_executable(CustomContainers
         UniquePtr.cpp
-        UniquePtr.h)
+        UniquePtr.h
+        Vector.cpp
+        Vector.h)
