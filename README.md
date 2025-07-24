@@ -1,6 +1,6 @@
 # 🚀 CustomCPPContainers
 
-**A showcase of hand-crafted C++ containers and utilities, built to deeply understand STL internals, modern C++ standards (C++20/23/26), memory management, and performance-critical design.**
+**A showcase of hand-crafted C++ containers and utilities, built to deeply understand STL internals, modern C++ standards (C++20), memory management, and performance-critical design.**
 
 > 🎯 **Goal**: Master core system-level design and create clean, modern, and safe C++ implementations.
 
