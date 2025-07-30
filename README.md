@@ -1,6 +1,6 @@
 # 🚀 CustomCPPContainers
 
-**A showcase of hand-crafted C++ containers and utilities, built to deeply understand STL internals, modern C++ standards (C++20/23/26), memory management, and performance-critical design.**
+**A showcase of hand-crafted C++ containers and utilities, built to deeply understand STL internals, modern C++ standards (C++20), memory management, and performance-critical design.**
 
 > 🎯 **Goal**: Master core system-level design and create clean, modern, and safe C++ implementations.
 
@@ -11,9 +11,9 @@
 | Container / Concept           | Status      | Highlights                                                | Modern C++ Features Used                        |
 |------------------------------|-------------|------------------------------------------------------------|-------------------------------------------------|
 | `unique_ptr` (Smart Pointer) | ✅ Implemented | Ownership, RAII, move semantics                             | `std::move`, `std::exchange`, `concepts`, `explicit` |
+| `Vector`                     | ✅ Implemented | Dynamic resizing, capacity management                      | `std::allocator`, `constexpr`, `span`           |
 | `shared_ptr / weak_ptr`      | ⬜ Planned     | Reference counting, cycle awareness                        | `enable_shared_from_this`, `atomic ops`        |
 | `LRU Cache`                  | ⬜ Planned     | Doubly linked list + hash map                              | `unordered_map`, `list`, C++20 `ranges`         |
-| `Vector`                     | ⬜ In Progress | Dynamic resizing, capacity management                      | `std::allocator`, `constexpr`, `span`           |
 | `Stack / Queue`              | ⬜ Planned     | Wrapper around custom containers                           | Templates, move support                         |
 | `Deque`                      | ⬜ Planned     | Block structure, amortized insert/remove                   | Custom memory pool                              |
 | `Memory Pool`                | ⬜ Planned     | Manual memory management for fixed-size allocations        | `aligned_storage`, `placement new`, `concepts`  |
@@ -42,5 +42,5 @@
 ## 📚 Tech Stack
 
 - **Compiler**: `g++ 13+` or `clang++ 16+`
-- **Standard**: `-std=c++26` with optional backports
+- **Standard**: `-std=c++20` with optional backports
 - **Tools**: Valgrind, AddressSanitizer, GoogleTest for benchmarking
