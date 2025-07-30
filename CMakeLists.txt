@@ -7,4 +7,6 @@ add_executable(CustomContainers
         UniquePtr.cpp
         UniquePtr.h
         Vector.cpp
-        Vector.h)
+        Vector.h
+        Singleton.cpp
+        Singleton.h)
