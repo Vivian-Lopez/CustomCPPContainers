@@ -11,4 +11,6 @@ add_executable(CustomContainers
         Singleton.cpp
         Singleton.h
         MeyersSingleton.cpp
-        MeyersSingleton.h)
+        MeyersSingleton.h
+        SmartPtr.cpp
+        SmartPtr.h)
