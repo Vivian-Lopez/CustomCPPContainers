@@ -9,4 +9,6 @@ add_executable(CustomContainers
         Vector.cpp
         Vector.h
         Singleton.cpp
-        Singleton.h)
+        Singleton.h
+        MeyersSingleton.cpp
+        MeyersSingleton.h)
