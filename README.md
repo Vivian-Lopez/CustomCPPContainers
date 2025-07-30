@@ -12,7 +12,7 @@
 |------------------------------|-------------|------------------------------------------------------------|-------------------------------------------------|
 | `unique_ptr` (Smart Pointer) | ✅ Implemented | Ownership, RAII, move semantics                             | `std::move`, `std::exchange`, `concepts`, `explicit` |
 | `Vector`                     | ✅ Implemented | Dynamic resizing, capacity management                      | `std::allocator`, `constexpr`, `span`           |
-| `shared_ptr / weak_ptr`      | ⬜ Planned     | Reference counting, cycle awareness                        | `enable_shared_from_this`, `atomic ops`        |
+| `shared_ptr / weak_ptr`      | ✅ Implemented | Reference counting, cycle awareness                        | `enable_shared_from_this`, `atomic ops`        |
 | `LRU Cache`                  | ⬜ Planned     | Doubly linked list + hash map                              | `unordered_map`, `list`, C++20 `ranges`         |
 | `Stack / Queue`              | ⬜ Planned     | Wrapper around custom containers                           | Templates, move support                         |
 | `Deque`                      | ⬜ Planned     | Block structure, amortized insert/remove                   | Custom memory pool                              |
