@@ -22,23 +22,23 @@ private:
 };
 
 template<typename T>
-class SmartPtr {
+class SharedPtr {
 public:
-    explicit SmartPtr(T* raw = nullptr) : obj(raw), counter(nullptr) {
+    explicit SharedPtr(T* raw = nullptr) : obj(raw), counter(nullptr) {
         // Only need a RefCounter if obj is not nullptr
         if (obj != nullptr) {
             counter = new RefCounter();
         }
     }
 
-    SmartPtr(const SmartPtr& other) : obj(other.obj), counter(other.counter) {
+    SharedPtr(const SharedPtr& other) : obj(other.obj), counter(other.counter) {
         // if we copy a SmartPtr with no obj then we don't need to increment
         if (counter) {
             counter->increment();
         }
     }
 
-    SmartPtr& operator=(const SmartPtr& other) {
+    SharedPtr& operator=(const SharedPtr& other) {
         // Check for copy assignment to self
         if (this != &other) {
             release();
@@ -56,7 +56,7 @@ public:
         return *this;
     }
 
-    ~SmartPtr() {
+    ~SharedPtr() {
         release();
     };
 
